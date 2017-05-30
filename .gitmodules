@@ -1,0 +1,3 @@
+[submodule "bslog"]
+	path = bslog
+	url = https://github.com/factorial-io/bslog.git
