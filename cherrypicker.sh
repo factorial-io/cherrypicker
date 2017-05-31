@@ -3,14 +3,10 @@
 ## Logging helper.
 source ./bslog/bslog.sh
 
-
-# start at c34b9d47a77a1dea708a1b42fa21d8b900163d54
-
 COMMITS_FILE_PATH="$1"
 DIR_PATH="$2"
 SKIP_TILL_COMMIT="$3"
 SKIP_COMMIT=true
-
 
 if [ -z "$1" ]; then
   BSLOG "ERROR" "Missing arguments"
@@ -47,10 +43,6 @@ cd $DIR_PATH;
 BSLOG "DEBUG" "Will skip till commit hash : $SKIP_TILL_COMMIT"
 BSLOG "DEBUG" "Directory argument         : $DIR_PATH"
 BSLOG "DEBUG" "Executing in directory     : $(pwd)"
-
-
-
-## helper functions
 
 ## main processing loop
 for i in "${commits[@]}"
